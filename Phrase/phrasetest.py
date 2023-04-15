@@ -1,13 +1,11 @@
-def wordtest():
+def phrase():
     import cv2
     from cvzone.HandTrackingModule import HandDetector
     from cvzone.ClassificationModule import Classifier
     import numpy as np
+
     import math
     import sys
-
-
-
 
 
     cap = cv2.VideoCapture(0)
@@ -21,8 +19,8 @@ def wordtest():
     folder = "Data\C"
     counter = 0
 
-    labels = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-    str1 = ""
+    labels = ["Stop","Goodbye","S.O.S","How are You ? ","Everything ok ?","Thank you","Please , Excuse me","Hello","Sorry","I need Help","Lets Go","I do not understand","Stop","Goodbye","S.O.S","How are You ? ","Everything ok ?","Thank you","Please , Excuse me","Hello","Sorry","I need Help","Lets Go","I do not understand","Lets Go","I do not understand"]
+    str = ""
 
     while True:
         success, img = cap.read()
@@ -73,13 +71,13 @@ def wordtest():
 
         key = cv2.waitKey(1)
         if key == 13:
-            str1+=labels[index]
+            str+=labels[index]
         if key == ord("p"):
-            print(str1)
+            print(str)
         if key == 32:
-            str1 += " "
+            str += " "
         if key == 8:
-            str1 = str[:-1]
+            str = str[:-1]
         if key == 27:
             cv2.destroyAllWindows()
-            return str1
+            return str

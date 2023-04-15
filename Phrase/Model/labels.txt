@@ -1,0 +1,12 @@
+0 Hello
+1 S.O.S
+2 How are You
+3 everything ok
+4 Thank You
+5 Please Excuse Me
+6 Sorry
+7 I Need Help
+8 lets go
+9 i do not understand
+10 stop
+11 Goodbye
