@@ -16,10 +16,10 @@ Through SignSense, other people will be able to understand the sign language Joh
 ## Technologies
 Project is created with:
 * Python 
-* JavaScript
+* OpenCv
+* MediaPipe
 * TensorFlow
-* HTML
-* CSS
+* Pygame
 * NumPy
 ## Usage
 The interface provides translated text for the respective hand gesture detected by the webcam installed on your device.
